@@ -1,0 +1,57 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="panel panel-primary">
+                <div class="panel-body ppanel">
+                    <div class="row">
+                        <h2>Previous Study</h2>
+                        <div class="col-md-12">
+                            <table class="table TData">
+                                <tbody>
+                                <tr>
+                                    <th>Last School Name :</th>
+                                    <td>{{value.lastSchoolName}}</td>
+
+                                </tr>
+                                <tr>
+                                    <th>Address :</th>
+                                    <td>{{value.lsaddress}}</td>
+
+                                </tr>
+                                <tr>
+                                    <th>Email :</th>
+                                    <td>{{value.lsemail}}</td>
+
+                                </tr>
+                                <tr>
+                                    <th>Telephone :</th>
+                                    <td>{{value.lstelephone}}</td>
+
+                                </tr>
+                                <tr>
+                                    <th>Last Class :</th>
+                                    <td>{{value.lslastClass}}</td>
+
+                                </tr>
+                                <tr>
+                                    <th>Last Result :</th>
+                                    <td>{{value.lslastResult}}</td>
+
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="form-group videologin">
+                        <a class="btn btn-primary btn-block" ui-sref="root.rootProfile.profileEdit({id: value.studentId})">Edit</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+</div>

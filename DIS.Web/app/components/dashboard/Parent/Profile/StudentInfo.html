@@ -1,0 +1,99 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="panel panel-primary">
+                <div class="panel-body ppanel">
+                    <div class="row">
+                        <h2>Student Information</h2>
+                        <div class="col-md-6">
+
+                            <div>
+                                <img src="{{StudentImage}}" alt="Card image cap" class="Simg"/>
+
+                            </div>
+                            <div class="card-block">
+                                <table class="table TData">
+
+                                    <tbody>
+                                    <tr class="tr_class">
+
+                                        <th>Student Id :</th>
+                                        <td>{{value.studentId}}</td>
+
+                                    </tr>
+                                    <tr class="tr_class">
+
+                                        <th>Name :</th>
+                                        <td>{{value.firstName}}&nbsp;{{value.middleName}}&nbsp;{{value.lastName}}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>Gender :</th>
+                                        <td>{{value.gender}}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>Date Of Birth :</th>
+                                        <td>{{value.dateOfBirth | date:'yyyy-MM-dd'}}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block">
+                                <table class="table TData">
+
+                                    <tbody>
+                                    <tr class="tr_class">
+
+                                        <th>Age :</th>
+                                        <td>{{value.ageAtAdmission}}</td>
+
+                                    </tr>
+                                    <tr class="tr_class">
+
+                                        <th>Nationality :</th>
+                                        <td>{{value.nationality}}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>Enrollmant Date :</th>
+                                        <td>{{value.enrollmentDate | date:'yyyy-MM-dd'}}</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th>Release Date :</th>
+                                        <td>{{value.releaseDate | date:'yyyy-MM-dd'}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Branch :</th>
+                                        <td>{{value.branchId}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Active :</th>
+                                        <td>{{value.active}}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group videologin">
+                        <a class="btn btn-primary btn-block" ui-sref="root.rootProfile.StudentInfoEdit({id: value.studentId})">Edit</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+</div>
+
+
+
